@@ -133,9 +133,9 @@ public class Server {
         int res = 0;
         for(SelectionKey key : selector.keys())
         {
-            Channel targetchannel = key.channel();
+            Channel targetChannel = key.channel();
 
-            if(targetchannel instanceof SocketChannel)
+            if(targetChannel instanceof SocketChannel)
             {
                 res++;
             }
